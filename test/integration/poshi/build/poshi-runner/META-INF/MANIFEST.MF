@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1439238775543
+Bundle-ManifestVersion: 2
+Bundle-Name: Liferay Poshi Runner
+Bundle-SymbolicName: com.liferay.poshi.runner
+Bundle-Vendor: Liferay, Inc.
+Bundle-Version: 1.0.12
+Created-By: 1.7.0_71 (Oracle Corporation)
+Git-Descriptor: 964ea90
+Git-SHA: 964ea90566ba694664f1ebc730a4504a5c4b3910
+Import-Package: com.google.common.base,com.sun.mail.imap,com.thoughtwork
+ s.selenium,io.appium.java_client,io.appium.java_client.android,io.appiu
+ m.java_client.ios,javax.imageio,javax.mail,javax.mail.internet,javax.xm
+ l.namespace,javax.xml.parsers,javax.xml.xpath,junit.framework,net.jsour
+ cerer.webdriver.jserrorcollector,org.apache.commons.io,org.apache.commo
+ ns.lang,org.apache.commons.lang3,org.apache.tools.ant,org.dom4j,org.dom
+ 4j.io,org.junit,org.junit.runner,org.junit.runners,org.openqa.selenium,
+ org.openqa.selenium.chrome,org.openqa.selenium.firefox,org.openqa.selen
+ ium.ie,org.openqa.selenium.interactions,org.openqa.selenium.internal,or
+ g.openqa.selenium.remote,org.openqa.selenium.safari,org.openqa.selenium
+ .support.ui,org.sikuli.api,org.sikuli.api.robot,org.sikuli.api.robot.de
+ sktop,org.sikuli.api.visual,org.sikuli.api.visual.element,org.w3c.dom,o
+ rg.xml.sax
+Include-Resource: classes,META-INF/resources=src/META-INF/resources
+Javac-Compiler: modern
+Javac-Debug: on
+Javac-Deprecation: off
+Javac-Encoding: ISO-8859-1
+Private-Package: com.liferay.poshi.runner,com.liferay.poshi.runner.logge
+ r,com.liferay.poshi.runner.selenium,com.liferay.poshi.runner.util,poshi
+ -runner.properties
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-2.4.1.201501161927

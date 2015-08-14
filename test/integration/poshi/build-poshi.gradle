@@ -1,0 +1,28 @@
+buildscript {
+	repositories {
+		mavenLocal()
+
+		maven {
+			url "http://cdn.repository.liferay.com/nexus/content/groups/public"
+		}
+	}
+
+	dependencies {
+		classpath group: "com.liferay", name: "com.liferay.gradle.plugins.poshi.runner", version: "latest.release"
+	}
+}
+
+apply plugin: "com.liferay.poshi.runner"
+
+poshiRunner {
+	baseDir = file("folder/with/poshi/scripts")
+	version = "1.0.12"
+}
+
+repositories {
+	mavenLocal()
+
+	maven {
+		url "http://cdn.repository.liferay.com/nexus/content/groups/public"
+	}
+}
