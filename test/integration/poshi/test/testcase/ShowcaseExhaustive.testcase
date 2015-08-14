@@ -1,0 +1,20 @@
+<definition component-name="portal-smoke">
+	<property name="testray.main.component.name" value="Administration" />
+	<command name="GetToTheShowcasePage" priority="5">
+		<execute function="Open" locator1="http://localhost:8080/web/guest/showcase" />
+		<execute function="AssertElementPresent" locator1="//img[contains(@src,'javax.faces.resource=component-showcase.png')]" />
+	</command>
+	<command name="TestAlloyButtonGeneral" priority="5">
+		<execute function="Open" locator1="http://localhost:8080/web/guest/showcase/-/component/alloy/button/general" />
+		<execute function="AssertElementPresent" locator1="//button[@type='button']" />
+		<execute function="AssertElementPresent" locator1="//button/child::node()[contains(@src,'liferay-faces-logo-small.png')]" />
+		<execute function="AssertElementPresent" locator1="//button[contains(text(),'1234')]" />
+	</command>
+<!--
+	<command name="TestAlloyButtonMenu" priority="5">
+		<execute function="Open" locator1="http://localhost:8080/web/guest/showcase/-/component/alloy/button/menu" />
+		<execute function="AssertElementPresent" locator1="//a[@type='button']" />
+	</command>
+-->
+</definition>
+

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.liferay.poshi.runner.PoshiRunner" tests="1" skipped="0" failures="1" errors="0" timestamp="2015-08-14T19:28:40" hostname="Philips-MacBook-Pro.local" time="0.001">
+<testsuite name="com.liferay.poshi.runner.PoshiRunner" tests="1" skipped="0" failures="1" errors="0" timestamp="2015-08-14T19:59:54" hostname="Philips-MacBook-Pro.local" time="0.005">
   <properties/>
-  <testcase name="initializationError" classname="com.liferay.poshi.runner.PoshiRunner" time="0.001">
+  <testcase name="initializationError" classname="com.liferay.poshi.runner.PoshiRunner" time="0.005">
     <failure message="java.lang.Exception" type="java.lang.Exception">java.lang.Exception
 	at com.liferay.poshi.runner.PoshiRunnerValidation._throwExceptions(PoshiRunnerValidation.java:1416)
 	at com.liferay.poshi.runner.PoshiRunnerValidation.validate(PoshiRunnerValidation.java:96)
@@ -87,11 +87,38 @@ timeout.explicit.wait=60
 timeout.implicit.wait=3
 vm.host=vm-1
 
-1 errors in POSHI
+10 errors in POSHI
 
 
-Invalid test case class Showcase
+Invalid macro command User#firstLoginPG
+/Users/philipwhite/Projects/liferay.com/liferay-faces-4.2.x/test/integration/poshi/test/testcase/Showcase.testcase:7
 
+Invalid macro class Page
+/Users/philipwhite/Projects/liferay.com/liferay-faces-4.2.x/test/integration/poshi/test/testcase/Showcase.testcase:9
+
+Invalid macro class Portlet
+/Users/philipwhite/Projects/liferay.com/liferay-faces-4.2.x/test/integration/poshi/test/testcase/Showcase.testcase:14
+
+Invalid macro class User
+/Users/philipwhite/Projects/liferay.com/liferay-faces-4.2.x/test/integration/poshi/test/testcase/Showcase.testcase:7
+
+Invalid macro command Page#tearDownPG
+/Users/philipwhite/Projects/liferay.com/liferay-faces-4.2.x/test/integration/poshi/test/testcase/Showcase.testcase:20
+
+Invalid macro class Page
+/Users/philipwhite/Projects/liferay.com/liferay-faces-4.2.x/test/integration/poshi/test/testcase/Showcase.testcase:20
+
+Invalid macro class ShowcaseSmoke
+/Users/philipwhite/Projects/liferay.com/liferay-faces-4.2.x/test/integration/poshi/test/testcase/Showcase.testcase:24
+
+Invalid macro command Page#addPG
+/Users/philipwhite/Projects/liferay.com/liferay-faces-4.2.x/test/integration/poshi/test/testcase/Showcase.testcase:9
+
+Invalid macro command ShowcaseSmoke#SmokeMacroCommand
+/Users/philipwhite/Projects/liferay.com/liferay-faces-4.2.x/test/integration/poshi/test/testcase/Showcase.testcase:24
+
+Invalid macro command Portlet#addPG
+/Users/philipwhite/Projects/liferay.com/liferay-faces-4.2.x/test/integration/poshi/test/testcase/Showcase.testcase:14
 
 
 ]]></system-out>
