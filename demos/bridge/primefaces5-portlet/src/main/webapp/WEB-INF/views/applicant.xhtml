@@ -9,6 +9,25 @@
 	<example-cc:sponsorButton />
 	<example-cc:divider />
 	<alloy:row>
+		<alloy:column id="c0" width="66">
+			<h:form id="f0">
+
+
+<p:growl id="msgs" showDetail="true"/>
+ 
+<h:graphicImage styleClass="liferay-logo" value="#{resource['example:liferay-logo.png']}" />
+<h:panelGrid columns="2">
+	<p:imageCropper value="#{cropperView.croppedImage}" image="#{resource['example:liferay-logo.png']}" initialCoords="10,10,85,25"/>
+	<p:graphicImage rendered="#{not empty cropperView.newImageName}" id="cropped" name="#{cropperView.newImageName}.png" />
+</h:panelGrid>
+ 
+<p:commandButton value="Crop" action="#{cropperView.crop}" update="cropped msgs" icon="ui-icon-scissors"/>
+
+
+			</h:form>
+		</alloy:column>
+	</alloy:row>
+	<alloy:row>
 		<alloy:column id="c1" width="66">
 			<h:form id="f1">
 				<p:messages autoUpdate="true" />

@@ -13,6 +13,12 @@
 	<name>PrimeFaces5 Portlet</name>
 
 	<dependencies>
+
+<dependency>
+	<groupId>javax.servlet</groupId>
+	<artifactId>javax.servlet-api</artifactId>
+</dependency>
+
 		<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>
@@ -32,7 +38,7 @@
 		<dependency>
 			<groupId>org.primefaces</groupId>
 			<artifactId>primefaces</artifactId>
-			<version>${primefaces5.version}</version>
+			<version>5.3</version>
 		</dependency>
 		<dependency>
 			<groupId>com.liferay.faces</groupId>
